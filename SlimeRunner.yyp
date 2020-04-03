@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "2e7b1640-bb0d-4bb8-aa90-b81127c86da9",
-            "Value": {
-                "id": "152c57cd-bd7e-4b29-b0c1-74446e2d5ca7",
-                "resourcePath": "sprites\\s_enemy_tree_large\\s_enemy_tree_large.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2fd5d069-fdaf-4450-81f9-70b624ff0198",
             "Value": {
                 "id": "a58549c6-a49d-4aea-8d33-0197123a56cd",
@@ -122,7 +114,7 @@
             "Key": "566e9587-f7b4-4595-93cc-7c3133c861be",
             "Value": {
                 "id": "85230944-c28b-4117-acf5-463f02fa763a",
-                "resourcePath": "sprites\\s_enemy_tree_small\\s_enemy_tree_small.yy",
+                "resourcePath": "sprites\\s_enemy_zombie_female\\s_enemy_zombie_female.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -146,7 +138,7 @@
             "Key": "6561f636-03dd-42b4-acba-969bcb4b2b60",
             "Value": {
                 "id": "f7132155-ec32-4e71-ab8a-7d5c2f1fe5f4",
-                "resourcePath": "sprites\\s_enemy_box\\s_enemy_box.yy",
+                "resourcePath": "sprites\\s_enemy_static\\s_enemy_static.yy",
                 "resourceType": "GMSprite"
             }
         },
