@@ -3,10 +3,8 @@
 
 randomize();
 
-var count = irandom_range(1, 2);
-
 var i = instance_create_layer(room_width+100, room_height - 80, "Instances", o_obstacle);
-i.sprite_index = choose(s_enemy_static, s_enemy_zombie_female);
+i.sprite_index = choose(s_enemy_static, s_enemy_zombie_female, s_enemy_zombie_male);
 
 switch(i.sprite_index) {
 	case s_enemy_zombie_female:
@@ -16,13 +14,10 @@ switch(i.sprite_index) {
 	case s_enemy_static:
 		i.image_speed = 0
 		i.image_index = irandom_range(0, sprite_get_number(i.sprite_index) - 1);
-		if(global.speed_modifier > 1.5) {
-			if(count == 2) {
-				var j = instance_create_layer(room_width+100, room_height - 75, "Instances", o_obstacle);
-				j.sprite_index = choose(s_enemy_static);
-				j.image_index = irandom_range(0, sprite_get_number(j.sprite_index) - 1);
-			}
-		}
+		break;
+	case s_enemy_zombie_male:
+		i.image_xscale = -1;
+		i.image_speed = 5;
 		break;
 	default:
 }

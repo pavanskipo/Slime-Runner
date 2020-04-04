@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(!audio_is_playing(sound_game_over) and !global.game_over) {
+	audio_play_sound(sound_game_over, 100, false);	
+}
 global.game_over = true;
 grav = 0;
 global.speed_modifier = 0;

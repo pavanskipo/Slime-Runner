@@ -14,6 +14,7 @@ if (place_meeting(x, y+1, o_block)) {
 		ducking = false;
 	
 	if(jump_key and !duck_key) {
+		audio_play_sound(sound_jumping, 100, false);
 		jumping = true;
 		vertical_speed = -jump_speed;
 	}
