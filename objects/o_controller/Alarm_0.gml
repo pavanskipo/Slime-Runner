@@ -5,7 +5,7 @@ randomize();
 
 var count = irandom_range(1, 2);
 
-var i = instance_create_layer(room_width+100, room_height - 112, "Instances", o_obstacle);
+var i = instance_create_layer(room_width+100, room_height - 80, "Instances", o_obstacle);
 i.sprite_index = choose(s_enemy_static, s_enemy_zombie_female);
 
 switch(i.sprite_index) {
@@ -27,4 +27,7 @@ switch(i.sprite_index) {
 	default:
 }
 
+if(global.game_over) {
+	exit;
+}
 alarm[0] = room_speed * random_range(1/global.speed_modifier, 3/global.speed_modifier);
