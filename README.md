@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/pavanskipo/Slime-Runner/master/slime_runner.jpg)
+
 # Slime-Runner
 
 A simple endless runner where you play as a Slime trying to get home while dodging zombies and obstacles.
